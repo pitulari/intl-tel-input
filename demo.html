@@ -9,7 +9,8 @@
   <body>
     <h1>International Telephone Input</h1>
     <form>
-      <input id="phone" type="tel">
+      <input class="phone" type="tel">
+      <input class="phone" type="tel">
       <button type="submit">Submit</button>
     </form>
 
@@ -17,7 +18,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="build/js/intlTelInput.js"></script>
     <script>
-      $("#phone").intlTelInput({
+      $(".phone").intlTelInput({
         //allowExtensions: true,
         //autoFormat: false,
         //autoHideDialCode: false,
@@ -33,6 +34,7 @@
         //numberType: "MOBILE",
         //onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
         //preferredCountries: ['cn', 'jp'],
+        language: 'es',
         utilsScript: "lib/libphonenumber/build/utils.js"
       });
     </script>
